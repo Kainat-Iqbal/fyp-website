@@ -12,6 +12,12 @@
     width: 100%;
     background-color: #00304B;
     display: flex;
+    align-items: center;
+}
+
+#dropdown-basic{
+  background-color: #00304B;
+
 }
 
 #bottom{
