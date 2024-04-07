@@ -1,7 +1,9 @@
 import * as React from "react";
 import "./style.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function LoginPage() {
+  const nav = useNavigate();
   return (
     <div id="mainLoginDiv">
       <div id="loginForm">
@@ -17,7 +19,14 @@ function LoginPage() {
             <label>Password</label>
             <input type="password"></input>
           </div>
-          <button style={{borderRadius:'15px',width: '17vw',marginTop:'2vh'}}>Login</button>
+          <button
+            style={{ borderRadius: "15px", width: "17vw", marginTop: "2vh" }}
+            onClick={() => {
+              nav("/home");
+            }}
+          >
+            Login
+          </button>
         </form>
       </div>
     </div>

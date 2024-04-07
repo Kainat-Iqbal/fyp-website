@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { AccountCircle, MenuOutlined } from "@mui/icons-material";
+import TopBar from "../TopBar";
 
 function SideBar() {
   const [collapsed, setCollapsed] = useState(false);
@@ -11,6 +12,7 @@ function SideBar() {
   };
   return (
     <>
+      
       <div
         id="TopBar"
         style={{
@@ -20,6 +22,10 @@ function SideBar() {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-between",
+          position: "fixed", /* Fix the position */
+        top: "0", /* Position it at the top */
+        left:' 0', /* Position it at the left */
+        zIndex: '999'
         }}
       >
         <div
@@ -70,13 +76,13 @@ function SideBar() {
           />
         </div>
       </div>
-
       <Sidebar
         style={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "rgba(0, 48, 75, 1)",
+          backgroundColor: "#00304B",
           height: "91vh",
+          marginTop:"9vh"
         }}
         collapsed={collapsed}
       >
@@ -88,6 +94,9 @@ function SideBar() {
             <MenuItem> Add Examination of controller </MenuItem>
             <MenuItem> Add Student </MenuItem>
             <MenuItem> Add Course </MenuItem>
+            <MenuItem> Add Degree Program </MenuItem>
+            <MenuItem> Add Session </MenuItem>
+            <MenuItem> Add Batch </MenuItem>
           </SubMenu>
 
           <SubMenu label="View">

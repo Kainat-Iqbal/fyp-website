@@ -9,7 +9,7 @@ function MainScreen() {
     <div id="mainDivMainScreen">
       <div id="top">
         <p style={{ color: "white", marginTop: "2vh", fontSize: "1.3rem" }}>
-          <i>Academic Accelerator</i>
+          Academic Accelerator
         </p>
 
         <Dropdown class="dropDown">
@@ -81,7 +81,7 @@ function MainScreen() {
       <div id="middle">
         <img src={require("./FYPLogo.png")} style={{ width: "25vw" }} />
         <h1>
-          <i>Academic Accelerator</i>
+          Academic Accelerator
         </h1>
         <h2>Faculty and Student Academic Guide</h2>
       </div>
