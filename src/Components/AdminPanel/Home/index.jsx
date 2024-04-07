@@ -32,7 +32,7 @@ function Home() {
             <h5>Total Pass Students</h5>
             <div id="numImage">
               <h1>5400</h1>
-              <img src={require("./passStudent.jpeg")} style={{ width: "6vw", height:"10vh" }} />
+              <img src={require("./passStudent.png")} style={{ width: "6vw", height:"10vh" }} />
             </div>
           </div>
 
@@ -40,7 +40,7 @@ function Home() {
             <h5>Total Fail Students</h5>
             <div id="numImage">
               <h1>200</h1>
-              <img src={require("./fail.png")} style={{ width: "5vw", height:"10vh" }} />
+              <img src={require("./fail.png")} style={{ width: "4vw", height:"10vh" }} />
             </div>
           </div>
 

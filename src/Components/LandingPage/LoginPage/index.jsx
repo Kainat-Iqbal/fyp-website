@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./style.css";
-import { Link, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
 function LoginPage() {
   const nav = useNavigate();
@@ -10,12 +10,12 @@ function LoginPage() {
         <h1>
           <i>Academic Accelerator</i>
         </h1>
-        <form>
-          <div id="formField">
+        <form id="loginFormDiv">
+          <div id="InputFormField">
             <label>Email</label>
             <input type="email" placeholder="abc@gmail.com"></input>
           </div>
-          <div id="formField">
+          <div id="InputFormField">
             <label>Password</label>
             <input type="password"></input>
           </div>

@@ -1,7 +1,7 @@
 import './App.css';
+import AddTeacher from './Components/AdminPanel/AddTeacher';
 import Home from './Components/AdminPanel/Home';
 import SideBar from './Components/AdminPanel/SideBar';
-import TopBar from './Components/AdminPanel/TopBar';
 import LoginPage from './Components/LandingPage/LoginPage';
 import MainScreen from './Components/LandingPage/MainScreen';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,9 +18,10 @@ function App() {
         <Route path='/login' element={<LoginPage/>}/>
 
         <Route path='/bar' element={<SideBar/>}/>
-        <Route path='/t' element={<TopBar/>}/>
 
         <Route path='/home' element={<Home/>}/>
+
+        <Route path='/addTeacher' element={<AddTeacher/>}/>
       </Routes>
       </BrowserRouter>
     </>

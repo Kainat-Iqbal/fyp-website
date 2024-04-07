@@ -2,9 +2,10 @@ import * as React from "react";
 import { useState } from "react";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { AccountCircle, MenuOutlined } from "@mui/icons-material";
-import TopBar from "../TopBar";
+import {useNavigate } from "react-router-dom";
 
 function SideBar() {
+  const nav = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
 
   const handleToggleSidebar = () => {
@@ -88,7 +89,9 @@ function SideBar() {
       >
         <Menu>
           <SubMenu label="Add">
-            <MenuItem> Add Teacher </MenuItem>
+            <MenuItem onClick={() => {
+              nav("/addTeacher");
+            }}> Add Teacher </MenuItem>
             <MenuItem> Add HOD </MenuItem>
             <MenuItem> Add Dean</MenuItem>
             <MenuItem> Add Examination of controller </MenuItem>
