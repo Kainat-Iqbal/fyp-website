@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./index.css";
-import SideBar from "../SideBar";
+import SideBar from "../../SideBar";
 
 function AddTeacher() {
   return (

@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useState } from "react";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
-import { AccountCircle, MenuOutlined } from "@mui/icons-material";
-import {useNavigate } from "react-router-dom";
+import { AccountCircle, AddCircle, Home, MenuOutlined, TableView } from "@mui/icons-material";
+import { useNavigate, Link } from "react-router-dom";
 
 function SideBar() {
   const nav = useNavigate();
@@ -13,7 +13,6 @@ function SideBar() {
   };
   return (
     <>
-      
       <div
         id="TopBar"
         style={{
@@ -23,10 +22,10 @@ function SideBar() {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-between",
-          position: "fixed", /* Fix the position */
-        top: "0", /* Position it at the top */
-        left:' 0', /* Position it at the left */
-        zIndex: '999'
+          position: "fixed" /* Fix the position */,
+          top: "0" /* Position it at the top */,
+          left: " 0" /* Position it at the left */,
+          zIndex: "999",
         }}
       >
         <div
@@ -36,7 +35,7 @@ function SideBar() {
             height: "9vh",
             marginLeft: "2vw",
             display: "flex",
-            alignItems:'center'
+            alignItems: "center",
           }}
         >
           <button
@@ -51,7 +50,7 @@ function SideBar() {
             style={{
               width: "10vw",
               height: "17vh",
-              marginTop:"2vh",
+              marginTop: "2vh",
               marginLeft: "-2vw",
             }}
           />
@@ -60,8 +59,8 @@ function SideBar() {
             style={{
               color: "white",
               fontSize: "1.2rem",
-              marginLeft:'-2vw',
-              marginTop:"2vh"
+              marginLeft: "-2vw",
+              marginTop: "2vh",
             }}
           >
             Academic Accelerator
@@ -83,15 +82,31 @@ function SideBar() {
           flexDirection: "column",
           backgroundColor: "#00304B",
           height: "91vh",
-          marginTop:"9vh"
+          marginTop: "9vh",
+          position: "fixed" /* Fix the position */,
+          top: "0" /* Position it at the top */,
+          left: " 0" /* Position it at the left */,
+          zIndex: "999",
         }}
         collapsed={collapsed}
       >
         <Menu>
-          <SubMenu label="Add">
-            <MenuItem onClick={() => {
-              nav("/addTeacher");
-            }}> Add Teacher </MenuItem>
+          <MenuItem icon={<Home/>}
+            onClick={() => {
+              nav("/home");
+            }}
+          >
+            Home
+          </MenuItem>
+          <SubMenu icon={<AddCircle/>} label="Add">
+            <MenuItem
+              onClick={() => {
+                nav("/addTeacher");
+              }}
+            >
+              {" "}
+              Add Teacher{" "}
+            </MenuItem>
             <MenuItem> Add HOD </MenuItem>
             <MenuItem> Add Dean</MenuItem>
             <MenuItem> Add Examination of controller </MenuItem>
@@ -102,8 +117,10 @@ function SideBar() {
             <MenuItem> Add Batch </MenuItem>
           </SubMenu>
 
-          <SubMenu label="View">
-            <MenuItem> View Teacher </MenuItem>
+          <SubMenu icon={<TableView/>} label="View">
+            <MenuItem onClick={() => {
+                nav("/viewTeacher");
+              }}> View Teacher </MenuItem>
             <MenuItem> View HOD </MenuItem>
             <MenuItem> View Dean</MenuItem>
             <MenuItem> View Examination of controller </MenuItem>
