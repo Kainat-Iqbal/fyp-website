@@ -1,43 +1,43 @@
 import * as React from "react";
-import "./addTeacher.css";
+import "./HOD.css";
 import SideBar from "../../SideBar";
 
-function AddTeacher() {
+function AddHOD() {
   return (
-    <div id="mainAddTeacherDiv">
+    <div id="mainAddHODDiv">
       <SideBar />
-      <div id="teacherWithoutBar">
-        <div id="teacherTop">
-          <h1>Add Teacher</h1>
+      <div id="HODWithoutBar">
+        <div id="HODTop">
+          <h1>Add HOD</h1>
         </div>
 
-        <div id="teacherBottom">
-          <form id="teacherForm">
-            <div id="teacherField">
+        <div id="HODBottom">
+          <form id="HODForm">
+            <div id="HODField">
               <label>Name</label>
               <input type="text" placeholder="Sara Ahmed"></input>
             </div>
-            <div id="teacherField">
+            <div id="HODField">
               <label>Email</label>
               <input type="email" placeholder="abc@gmail.com"></input>
             </div>
-            <div id="teacherField">
+            <div id="HODField">
               <label>Password</label>
               <input type="password"></input>
             </div>
-            <div id="teacherField">
+            <div id="HODField">
               <label>Department</label>
               <input type="text" placeholder="Software Engineering"></input>
             </div>
-            <div id="teacherField">
+            <div id="HODField">
               <label>Designation</label>
-              <input type="text" placeholder="Lecturer"></input>
+              <input type="text" placeholder="Head of Department"></input>
             </div>
-            <button>Add Teacher</button>
+            <button>Add HOD</button>
           </form>
         </div>
       </div>
     </div>
   );
 }
-export default AddTeacher;
+export default AddHOD;

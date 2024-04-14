@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./style.css";
+import "./mainScreen.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Link, useNavigate } from "react-router-dom";
 

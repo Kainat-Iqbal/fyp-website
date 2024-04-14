@@ -1,17 +1,17 @@
 import * as React from "react";
-import "./viewTeacher.css";
+import "./viewHOD.css";
 import SideBar from "../../SideBar";
 import Table from "react-bootstrap/Table";
 import { Edit } from "@mui/icons-material";
 
-function ViewTeacher() {
+function ViewHOD() {
   return (
-    <div id="mainViewTeacherDiv">
+    <div id="mainViewHODDiv">
       <SideBar />
-      <div id="viewTeacherWithoutBar">
-        <div id="viewTeacherTop">
-          <div id="totalTeacher">
-            <h5>Total Teachers</h5>
+      <div id="viewHODWithoutBar">
+        <div id="viewHODTop">
+          <div id="totalHOD">
+            <h5>Total HODs</h5>
             <h1>32</h1>
           </div>
 
@@ -31,8 +31,8 @@ function ViewTeacher() {
           </div>
         </div>
 
-        <div id="viewTeacherBottom">
-          <Table striped bordered hover id="viewTeacherTable">
+        <div id="viewHODBottom">
+          <Table striped bordered hover id="viewHODTable">
             <thead>
               <tr>
                 <th style={{ backgroundColor: "#00304B", color: "white" }}>
@@ -207,4 +207,4 @@ function ViewTeacher() {
     </div>
   );
 }
-export default ViewTeacher;
+export default ViewHOD;

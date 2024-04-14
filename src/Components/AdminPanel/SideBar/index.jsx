@@ -1,7 +1,13 @@
 import * as React from "react";
 import { useState } from "react";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
-import { AccountCircle, AddCircle, Home, MenuOutlined, TableView } from "@mui/icons-material";
+import {
+  AccountCircle,
+  AddCircle,
+  Home,
+  MenuOutlined,
+  TableView,
+} from "@mui/icons-material";
 import { useNavigate, Link } from "react-router-dom";
 
 function SideBar() {
@@ -91,23 +97,29 @@ function SideBar() {
         collapsed={collapsed}
       >
         <Menu>
-          <MenuItem icon={<Home/>}
+          <MenuItem
+            icon={<Home />}
             onClick={() => {
               nav("/home");
             }}
           >
             Home
           </MenuItem>
-          <SubMenu icon={<AddCircle/>} label="Add">
+          <SubMenu icon={<AddCircle />} label="Add">
             <MenuItem
               onClick={() => {
                 nav("/addTeacher");
               }}
             >
-              {" "}
-              Add Teacher{" "}
+              Add Teacher
             </MenuItem>
-            <MenuItem> Add HOD </MenuItem>
+            <MenuItem
+              onClick={() => {
+                nav("/addHOD");
+              }}
+            >
+              Add HOD
+            </MenuItem>
             <MenuItem> Add Dean</MenuItem>
             <MenuItem> Add Examination of controller </MenuItem>
             <MenuItem> Add Student </MenuItem>
@@ -117,11 +129,18 @@ function SideBar() {
             <MenuItem> Add Batch </MenuItem>
           </SubMenu>
 
-          <SubMenu icon={<TableView/>} label="View">
-            <MenuItem onClick={() => {
+          <SubMenu icon={<TableView />} label="View">
+            <MenuItem
+              onClick={() => {
                 nav("/viewTeacher");
-              }}> View Teacher </MenuItem>
-            <MenuItem> View HOD </MenuItem>
+              }}
+            >
+              View Teacher
+            </MenuItem>
+            <MenuItem onClick={() => {
+                nav("/viewHOD");
+              }}> 
+              View HOD </MenuItem>
             <MenuItem> View Dean</MenuItem>
             <MenuItem> View Examination of controller </MenuItem>
             <MenuItem> View Student </MenuItem>
