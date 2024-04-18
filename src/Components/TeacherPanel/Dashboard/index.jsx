@@ -23,7 +23,7 @@ function Dashboard() {
                         style={{height:"90%",width:"90%",borderRadius:"50%"}}/>
                         </div>
                         <div id="Tinfo">
-                        <h2 style={{marginTop:"4%"}}>Ms.Laiba</h2>
+                        <h2 style={{marginTop:"4%"}}>Ms.Faiza</h2>
                         <h4 style={{marginTop:"-4%"}}>Lecturer</h4>
                         <h5 style={{marginTop:"-4%"}}>Jinnah University For Women</h5>
                         </div>
