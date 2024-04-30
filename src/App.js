@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SideBar from './Components/TeacherPanel/Sidebar';
 import Dashboard from './Components/TeacherPanel/Dashboard';
+import Courses from './Components/TeacherPanel/Courses';
 
 
 function App() {
@@ -16,8 +17,8 @@ function App() {
           <Route path='/' element={<MainScreen />} />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/bar' element={<SideBar />} />
+          <Route path='/courses' element={<Courses />} />
           <Route path='/teacher' element={<Dashboard />} />
-
         </Routes>
       </BrowserRouter>
     </>

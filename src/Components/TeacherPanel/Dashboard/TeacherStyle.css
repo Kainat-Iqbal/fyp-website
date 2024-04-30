@@ -43,11 +43,11 @@
     width: 95%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
     margin-left: 2.5%;
     padding: 1%;
     margin-top: 1%;
-    column-gap: 20px;
+    column-gap: 60px;
     row-gap: 20px;
     /* background-color: yellow; */
 }
