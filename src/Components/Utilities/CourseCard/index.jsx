@@ -5,8 +5,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-function CourseCard({image,name}){
-    return(
+import { useNavigate, Link } from "react-router-dom";
+
+function CourseCard({ image, name }) {
+    const nav = useNavigate();
+    return (
         <>
             <Card sx={{ width: 300 }} >
                 <CardMedia
@@ -19,12 +22,12 @@ function CourseCard({image,name}){
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small">Create Result</Button>
+                    <Button size="small" onClick={()=>{nav("/createResult")}}>Create Result</Button>
                     <Button size="small">View Result</Button>
                 </CardActions>
 
             </Card>
-           </>
+        </>
     )
 }
 export default CourseCard;

@@ -1,0 +1,30 @@
+
+#mainCR{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: blue; */
+}
+
+#sidebarCR{
+    height: 9%;
+}
+#topCR{
+    height: 40%;
+    margin-left: 18vw;
+    /* background-color: yellow */;
+}
+#tophead{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+   /*  background-color: bisque; */
+}
+#resultinfo{
+    height: 75%;
+    /* background-color: green; */
+}
+#bottomCR{
+    height: 51%;
+    margin-left: 18vw;
+   /*  background-color: red; */
+}

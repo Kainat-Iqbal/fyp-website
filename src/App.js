@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SideBar from './Components/TeacherPanel/Sidebar';
 import Dashboard from './Components/TeacherPanel/Dashboard';
 import Courses from './Components/TeacherPanel/Courses';
+import CreateResult from './Components/TeacherPanel/CreateResult';
+import StudentTable from './Components/Utilities/StudentTable';
 
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
           <Route path='/bar' element={<SideBar />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/teacher' element={<Dashboard />} />
+          <Route path='/student' element={<StudentTable />} />
+          <Route path='/createResult' element={<CreateResult />}
+          />
         </Routes>
       </BrowserRouter>
     </>
